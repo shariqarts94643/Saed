@@ -10,59 +10,46 @@
         });
 } */
 
+var locations1 = [
+  ['Bondi Beach', -33.890542, 151.274856, 4],
+  ['Coogee Beach', -33.923036, 151.259052, 5],
+  ['Cronulla Beach', -34.028249, 151.157507, 3],
+  ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
+  ['Maroubra Beach', -33.950198, 151.259302, 1]
+];
 var map;
+var markers = [];
 
 function initMap() {
-    
     map = new google.maps.Map(document.getElementById('map'), {
-        center: new google.maps.LatLng(26.378169, 43.906614), //Setting Initial Position
-        zoom: 10
+        zoom: 10,
+        center: new google.maps.LatLng(-33.92, 151.25),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
     });
+
+    var num_markers = locations1.length;
+    for (var i = 0; i < num_markers; i++) {
+        markers[i] = new google.maps.Marker({
+            position: {
+                lat: locations1[i][1],
+                lng: locations1[i][2]
+            },
+            map: map,
+            html: locations1[i][0],
+            id: i,
+        });
+
+        google.maps.event.addListener(markers[i], 'click', function () {
+            var infowindow = new google.maps.InfoWindow({
+                id: this.id,
+                content: this.html,
+                position: this.getPosition()
+            });
+            google.maps.event.addListenerOnce(infowindow, 'closeclick', function () {
+                markers[this.id].setVisible(true);
+            });
+            this.setVisible(false);
+            infowindow.open(map);
+        });
+    }
 }
-
-function newLocation(newLat, newLng) {
-    map.setCenter({
-        lat: newLat,
-        lng: newLng
-    });
-}
-
-
-//Setting Location with jQuery
-$(document).ready(function () {
-    $("#1").on('click', function () {
-        newLocation(26.378169, 43.906614);
-    });
-
-    $("#2").on('click', function () {
-        newLocation(13.67473458, -65.25445093);
-    });
-
-    $("#3").on('click', function () {
-        newLocation(26.378169, 43.906614);
-    });
-    
-    $("#4").on('click', function () {
-        newLocation(55.35327212, 4.80272414);
-    });
-
-    $("#5").on('click', function () {
-        newLocation(25.88426, 54.12609711);
-    });
-
-    $("#6").on('click', function () {
-        newLocation(-32.19286997, 18.44107915);
-    });
-    
-    $("#7").on('click', function () {
-        newLocation(23.12988958, 94.89940183);
-    });
-
-    $("#8").on('click', function () {
-        newLocation(23.4282276, 32.43463021);
-    });
-
-    $("#9").on('click', function () {
-        newLocation(-50.26263659, 155.46307644);
-    });
-});
