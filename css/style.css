@@ -469,7 +469,7 @@ a.bluelang    { background:#3188de; color:#fff !important; font-size:14px !impor
 .mapframe h1   { float:right; width:100%; color:#1a5477; font-family:'GE_SS_Two_Medium'; font-size:32px; text-align:right; margin:20px 0; padding:0 20px  }
 .mapframe span  { color:#bc0202; }
 
-.catigary  { float:right; width:100% }
+.catigary  { float:right; width:100%; cursor: pointer;}
 .catigary span  { float:right; width:30px; height:30px; margin:0 0 0 3px }
 .catigary p   { float:right; height:30px; line-height:30px; width:75%; color:#5b5b5b; font-size:15px; }
 
@@ -2616,6 +2616,10 @@ a.servicelink:hover   { text-decoration:none; color:#fff }
 		
 			#dates li {
 		  float:left; width:250px; text-align:center	}
+}
+#map {
+    width: 100%;
+    height: 500px;
 }
 
 
