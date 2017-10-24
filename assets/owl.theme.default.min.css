@@ -1,0 +1,43 @@
+﻿.owl-carousel { height:50px; }
+.owl-carousel .owl-controls{position:absolute;top:0; display:none; left:5px; text-align:center; z-index:1000; -webkit-tap-highlight-color:transparent}
+.owl-carousel .owl-controls .owl-nav [class*=owl-]{color:#fff;font-size:0; width:19px; height:20px; margin:0;padding:0; display:inline-block;cursor:pointer;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}
+.owl-carousel .owl-controls .owl-nav [class*=owl-]:hover{color:#fff;text-decoration:none}
+.owl-carousel  .owl-controls .owl-nav .disabled{opacity:.5;cursor:default}
+.owl-carousel .owl-dots .owl-dot{display:inline-block;zoom:1;*display:inline}
+.owl-carousel .owl-dots .owl-dot span{width:10px;height:10px;margin:5px 3px;background:#919191;display:block;-webkit-backface-visibility:visible;-webkit-transition:opacity 200ms ease;-moz-transition:opacity 200ms ease;-ms-transition:opacity 200ms ease;-o-transition:opacity 200ms ease;transition:opacity 200ms ease;-webkit-border-radius:30px;-moz-border-radius:30px;border-radius:30px}
+.owl-carousel .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:#f00000}
+.owl-carousel .owl-controls .owl-nav .owl-prev    { float:left; background:url("../images/leftarrow.png") top right no-repeat; }
+.owl-carousel .owl-controls .owl-nav .owl-next    { float:left; margin-left:10px; background:url("../images/rightarrow.png") top right no-repeat; }
+.owl-carousel .owl-controls .owl-nav .owl-prev:hover    { background:url("../images/leftarrow_hov.png") top right no-repeat; }
+.owl-carousel .owl-controls .owl-nav .owl-next:hover    { background:url("../images/rightarrow_hov.png") top right no-repeat; }
+
+.owl-carousels    { height:100px }
+.owl-carousels .owl-controls{ top:-55px; position:relative; left:0; text-align:center; z-index:1000; -webkit-tap-highlight-color:transparent}
+.owl-carousels .owl-controls .owl-nav [class*=owl-]{color:#fff;font-size:0; width:19px; height:30px; margin:0;padding:0;display:inline-block;cursor:pointer;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}
+.owl-carousels .owl-controls .owl-nav [class*=owl-]:hover{color:#fff;text-decoration:none}
+.owl-carousels .owl-controls .owl-nav .disabled{opacity:.5;cursor:default}
+.owl-carousels .owl-dots .owl-dot{display:inline-block;zoom:1;*display:inline}
+.owl-carousels .owl-dots .owl-dot span{width:10px;height:10px;margin:5px 7px;background:#d6d6d6;display:block;-webkit-backface-visibility:visible;-webkit-transition:opacity 200ms ease;-moz-transition:opacity 200ms ease;-ms-transition:opacity 200ms ease;-o-transition:opacity 200ms ease;transition:opacity 200ms ease;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}
+.owl-carousels .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:#869791}
+.owl-carousels .owl-controls .owl-nav .owl-prev    { float:left; margin-left:-25px;  }
+.owl-carousels .owl-controls .owl-nav .owl-next    {  float:right; margin-right:-25px; }
+.owl-carousels .owl-controls .owl-nav .owl-prev:hover    {  }
+.owl-carousels .owl-controls .owl-nav .owl-next:hover    {  }
+.owl-carousels  .owl-controls .owl-nav { display:block }
+
+
+.owl-carouselss    { height:320px }
+.owl-carouselss .owl-controls{position:absolute;top:-35px; left:0; z-index:1000; -webkit-tap-highlight-color:transparent}
+.owl-carouselss .owl-controls .owl-nav [class*=owl-]{color:#fff;font-size:0; width:19px; height:20px; margin:0;padding:0;display:inline-block;cursor:pointer;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}
+.owl-carouselss .owl-controls .owl-nav [class*=owl-]:hover{color:#fff;text-decoration:none}
+.owl-carouselss .owl-controls .owl-nav .disabled{opacity:.5;cursor:default}
+.owl-carouselss .owl-dots .owl-dot{display:inline-block;zoom:1;*display:inline}
+.owl-carouselss .owl-dots .owl-dot span{width:10px;height:10px;margin:5px 7px;background:#d6d6d6;display:block;-webkit-backface-visibility:visible;-webkit-transition:opacity 200ms ease;-moz-transition:opacity 200ms ease;-ms-transition:opacity 200ms ease;-o-transition:opacity 200ms ease;transition:opacity 200ms ease;-webkit-border-radius:30px;-moz-border-radius:30px;border-radius:30px}
+.owl-carouselss .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:#869791}
+.owl-carouselss .owl-controls .owl-nav .owl-prev    { float:left; background:url("../images/leftarrow.png") top right no-repeat; }
+.owl-carouselss .owl-controls .owl-nav .owl-next    {  float:left; margin-left:10px; background:url("../images/rightarrow.png") top right no-repeat; }
+.owl-carouselss .owl-controls .owl-nav .owl-prev:hover    { background:url("../images/leftarrow_hov.png") top right no-repeat; }
+.owl-carouselss .owl-controls .owl-nav .owl-next:hover    { background:url("../images/rightarrow_hov.png") top right no-repeat; }
+.owl-carouselss  .owl-controls .owl-nav { display:block }
+
+
