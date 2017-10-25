@@ -1,0 +1,74 @@
+/* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        .menu .show-on-mobile {
+            height: 100vh;
+            background: #184b6a;
+            padding: 10px;
+        }
+        .footericons li a {
+            font-size: 1em;
+            line-height: 1em;
+            padding: 0 1em;
+        }
+        .logndlang {
+            margin: 35px 0 0 0;
+        }
+        .onezone {
+            margin-right: 0;
+            margin-top: 0;
+        }
+        .twozone {
+            margin-top: 5px;
+            margin-right: -10px;
+        }
+        .threezone {
+            margin-top: 5px;
+            margin-right: 0;
+        }
+        .fourzone {
+            margin-top: -50px;
+            margin-right: 15px;
+        }
+        .fivezone {
+            margin-top: -80px;
+            margin-right: 0;
+        }
+        .sixzone {
+            margin-top: -110px;
+            margin-right: -13px;
+        }
+        .sevenzone {
+            margin-top: -55px;
+            margin-right: 60px;
+        }
+        .eightzone {
+            margin-right: 135px;
+            margin-top: -95px;
+        }
+        .listfooter li a, .footerleft, .copyright span {
+            font-size: 1em;
+        }
+        .mapframe h1 {
+            font-size: 1.6em;
+        }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+
+    }

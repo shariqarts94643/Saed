@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link href='css/style.css' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css' />
     <link href='css/bootstrap.css' rel='stylesheet' type='text/css' />
     <link href='css/bootstrap-rtl.min.css' rel='stylesheet' type='text/css' />
@@ -31,32 +32,25 @@
     <div class="topheader">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-12 col-md-12 col-lg-12">
                     <div class="footericons">
-
                         <ul>
                             <li><a href="#" class="masterTooltip facebook" title="Facebook"><i class="fa fa-instagram"></i></a></li>
                             <li><a href="#" class="masterTooltip youtube" title="YouTube"><i class="fa fa-youtube"></i></a></li>
                             <li><a href="#" class="masterTooltip twitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="#" class="masterTooltip linkedin" title="Linkedin"><i class="fa fa-facebook"></i></a></li>
-
-
                         </ul>
-
-
-
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 
     <div class="header">
         <div class="blueheader"></div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-9 col-md-9 col-xs-12">
+                <div class="col-lg-9 col-md-9 col-xs-7">
 
                     <div class="logndlang">
                         <a href="#" class="softgray">العربية</a>
@@ -64,7 +58,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-xs-12">
+                <div class="col-lg-3 col-md-3 col-xs-5">
 
 
 
@@ -558,10 +552,7 @@
                         </div>
                     </div>
 
-                    <div class="mapframe">
-                        <h1>تغطية عالمية: <span>26 دولة,</span> وفي ازدياد</h1>
-                        <div id="map"></div>
-                    </div>
+                    
 
 
                 </div>
@@ -573,16 +564,33 @@
 
             </div>
         </div>
+        
+        
+        <div class="mapframe">
+                        <h1>تغطية عالمية: <span>26 دولة,</span> وفي ازدياد</h1>
+                        <select name="" id="business">
+                            <option value="0">الهندسة</option>
+                            <option value="1">الزراعة</option>
+                            <option value="2">التشغيل والصيانة</option>
+                            <option value="3">المطاعم</option>
+                            <option value="4">السيارات</option>
+                            <option value="5">الأنتاج</option>
+                            <option value="6">الطيران</option>
+                            <option value="7">المستشفيات</option>
+                            <option value="7">التجزئة</option>
+                        </select>
+                        <div id="map"></div>
+                    </div>
     </div>
 
     <div class="copyright">
         <div class="container">
             <div class="row">
                 <div class="footerholder">
-                    <div class="col-md-1 col-sm-1 col-xs-12">
+                    <div class="col-md-1 col-sm-1 col-xs-4">
                         <div class="logofooter"><img src="images/logofooter.png" alt="SAED" /></div>
                     </div>
-                    <div class="col-md-11 col-sm-11 col-xs-12">
+                    <div class="col-md-11 col-sm-11 col-xs-8">
 
                         <ul class="listfooter">
                             <li><a href="#"><span>الحقوق محفوظة</span></a></li>
@@ -622,11 +630,11 @@
                 responsiveClass: true,
                 responsive: {
                     0: {
-                        items: 1,
+                        items: 2,
                         nav: true
                     },
                     600: {
-                        items: 1,
+                        items: 3,
                         nav: true
                     },
                     1000: {
