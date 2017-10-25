@@ -464,7 +464,7 @@ a.bluelang    { background:#3188de; color:#fff !important; font-size:14px !impor
 .newsletterzone    { float:right; width:100%; padding:20px 0 0; background:#d1b045 }
 
 .footerzone    { float:right; width:100%; padding:25px 0 0; background:#f2f2f2 }
-.mapframe   { float:right; width:100%; border-top:1px #c8c8c8 dashed; text-align:center }
+.mapframe   { float:right; width:100%; border-top:1px #c8c8c8 dashed; text-align:center; padding-top: 30px; }
 .mapframe img   { max-width:100% }
 .mapframe h1   { float:right; width:100%; color:#1a5477; font-family:'GE_SS_Two_Medium'; font-size:2em; text-align:right; margin:20px 0; padding:0 20px  }
 .mapframe span  { color:#bc0202; }
@@ -2620,6 +2620,11 @@ a.servicelink:hover   { text-decoration:none; color:#fff }
 #map {
     width: 100%;
     height: 600px;
+    margin-top: 20px;
+}
+#business {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 

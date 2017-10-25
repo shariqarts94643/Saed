@@ -567,8 +567,12 @@
         
         
         <div class="mapframe">
+               <div class="container">
+                    <div class="col-sm-6 col-xs-12">
                         <h1>تغطية عالمية: <span>26 دولة,</span> وفي ازدياد</h1>
-                        <select name="" id="business">
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                       <select class="form-control" name="" id="business" onchange="displayMarkers();">
                             <option value="0">الهندسة</option>
                             <option value="1">الزراعة</option>
                             <option value="2">التشغيل والصيانة</option>
@@ -577,8 +581,12 @@
                             <option value="5">الأنتاج</option>
                             <option value="6">الطيران</option>
                             <option value="7">المستشفيات</option>
-                            <option value="7">التجزئة</option>
+                            <option value="8">التجزئة</option>
                         </select>
+                    </div>
+               </div>
+                        
+                        
                         <div id="map"></div>
                     </div>
     </div>
