@@ -2626,6 +2626,9 @@ a.servicelink:hover   { text-decoration:none; color:#fff }
     margin-top: 20px;
     margin-bottom: 20px;
 }
+select, option {
+    font-family: 'GE_SS_Two_Light', Arial !important;
+}
 
 
 @font-face{ font-family:'GE_SS_Text_Medium';

@@ -209,10 +209,17 @@ function initMap() {
 
 }
 
-
 //Setting Location with jQuery
 $(document).ready(function () {
     $("#business").on('change', function() {
+        
+        if(markers)   //if any exist, remove them from map, and reset array
+    {
+           markers.forEach(function(marker){
+                   marker.setMap(null);
+           });
+           markers =[];
+    }
         
         if (this.value == '0') {
             
@@ -242,7 +249,7 @@ $(document).ready(function () {
                     infowindow.open(map);
                 });
             }
-        }
+        } 
         
         if (this.value == '1') {
             var num_markers1 = locations1.length;
@@ -480,4 +487,4 @@ $(document).ready(function () {
 
     });
 
-});
+}); 
