@@ -38,10 +38,31 @@ textarea {
 input {
 	 font-family:'Lato-Regular', Arial !important;
 	}
+label.custom-select {
+    position: relative;
+    display: inline-block; 
+    padding: 0;
+    height: 50px;
+    border: none;
+}
+.custom-select select {
+    padding-left: 20px; /*allows space for new arrow*/
+    -webkit-appearance: none; -moz-appearance: none; text-indent: 1px; border: 0; box-shadow: none; border-radius: 0;
+}
+/* Select new arrow styling */
+.custom-select:after {
+    content: "▼";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    font-size: 60%;
+    padding: 20px  15px;
+    background: #1a5477;
+    color: white;
+    pointer-events: none;
+}
 
-select {
-	font: 12px; font-family:'Lato-Regular', Arial !important;
-	}
 
 a { text-decoration:none;}
 a:hover { text-decoration:underline;}
@@ -2623,8 +2644,7 @@ a.servicelink:hover   { text-decoration:none; color:#fff }
     margin-top: 20px;
 }
 #business {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    height: 50px;
 }
 select, option {
     font-family: 'GE_SS_Two_Light', Arial !important;

@@ -69,53 +69,42 @@
 
     /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
+        #map { height: 400px; }
+        #business { margin-top: 10px; margin-bottom: 5px; }
+        .logndlang { margin: 0 0 0 0; }
+        .logndlang a { margin-top: 8px; }
         
-        .menu-container {
-        }
-        
-        .onezone {
-            margin-right: 0;
-            margin-top: 0;
-        }
-        .twozone {
-            margin-top: 5px;
-            margin-right: -10px;
-        }
-        .threezone {
-            margin-top: 5px;
-            margin-right: 0;
-        }
-        .fourzone {
-            margin-top: -50px;
-            margin-right: 15px;
-        }
-        .fivezone {
-            margin-top: -80px;
-            margin-right: 0;
-        }
-        .sixzone {
-            margin-top: -110px;
-            margin-right: -13px;
-        }
-        .sevenzone {
-            margin-top: -55px;
-            margin-right: 60px;
-        }
-        .eightzone {
-            margin-right: 135px;
-            margin-top: -95px;
-        }
-        .listfooter li a, .footerleft, .copyright span {
-            font-size: 1em;
-        }
-        .mapframe h1 {
-            font-size: 1.6em;
-        }
+        .onezone { width: 115px; height: 115px; margin: 0; }
+        .twozone, .fivezone { width: 90px; height: 90px; margin: 15px 0 0 0; }
+        .threezone { width: 115px; height: 115px; margin: 0; }
+        .fourzone { width: 115px; height: 115px; margin: 0; }
+        .sixzone { width: 115px; height: 115px; margin: 0; }
+        .sevenzone { width: 115px; height: 115px; margin-top: -20px; margin-right: 60px; }
+        .eightzone { margin-right: 180px; margin-top: -110px; }
+        .listfooter li a, .footerleft, .copyright span { font-size: 1em; }
+        .mapframe h1 { font-size: 1.6em; }
+        .catigary p { height: auto; line-height: 1em; margin-top: 10px;}
+        .lefthometext { width: auto; }
 
     }
 
     /* Custom, iPhone Retina */ 
     @media only screen and (max-width : 320px) {
-        
+        #map { height: 400px; }
+        #business { margin-top: 10px; margin-bottom: 5px; }
+        .logndlang { margin: 0 0 0 0; }
+        .logndlang a { margin-top: 8px; }
+        .catigary p { height: auto; line-height: 1em; margin-top: 10px;}
+        .lefthometext { width: auto; }
+        .onezone { width: 105px; height: 105px; margin: 0; }
+        .twozone { width: 70px; height: 70px; margin: 22px 0 0 0; }
+        .threezone { width: 105px; height: 105px; }
+        .fourzone { width: 105px; height: 105px; margin: 0; }
+        .fivezone { width: 70px; height: 70px; margin: 22px 0 0 0; }
+        .sixzone { width: 105px; height: 105px; margin: 0; }
+        .sevenzone { width: 105px; height: 105px; margin: 0;}
+        .eightzone { width: 70px; height: 70px; margin: 22px 0 0 0; }
+        .textformatbanner { font-size: 14px; }
+        .rightblockbanner3, .rightblockbanner2, .rightblockbanner1 { width: 200px; }
 
     }
